@@ -1458,6 +1458,7 @@
     <Content Include="app-assets\vendors\js\ui\screenfull.min.js" />
     <Content Include="app-assets\vendors\js\ui\tether.min.js" />
     <Content Include="app-assets\vendors\js\ui\unison.min.js" />
+    <Content Include="assets\css\Custom.css" />
     <Content Include="assets\css\style-rtl.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\js\NumberFormat.js" />
@@ -2007,7 +2008,10 @@
     <Content Include="HChart\themes\skies.src.js" />
     <Content Include="HChart\themes\sunset.js" />
     <Content Include="HChart\themes\sunset.src.js" />
+    <Content Include="Images\deleteNew.png" />
     <Content Include="Images\Double Ring-1s-200px.gif" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\loading6.gif" />
     <Content Include="Images\loading7_gray.gif" />
     <Content Include="Images\Logo1.png" />
     <Content Include="Images\logoNHLP.png" />
@@ -2019,7 +2023,9 @@
     <Content Include="Images\test.png" />
     <Content Include="Images\Wedges-3s-200px %281%29.gif" />
     <Content Include="Images\Wedges-3s-200px.gif" />
+    <Content Include="Scripts\Department.js" />
     <Content Include="Setting\AcademicYear.aspx" />
+    <Content Include="Setting\Department.aspx" />
     <Content Include="src\js\core\app-menu.js" />
     <Content Include="src\js\core\app.js" />
     <Content Include="src\js\core\libraries\bootstrap.min.js" />
@@ -2118,6 +2124,13 @@
     </Compile>
     <Compile Include="Setting\AcademicYear.aspx.designer.cs">
       <DependentUpon>AcademicYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting\Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

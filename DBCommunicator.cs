@@ -40,6 +40,24 @@ namespace BCS6thEMFall2020DemoPrject
             con.Close();
             return dt;
         }
+        public DataTable ExecuteProcedureSelect(string[] spParameters,string[] spValues, string ProcedureName)
+        {
+            cmd = new SqlCommand(ProcedureName, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            for(int i=0;i<spParameters.Length;i++)
+            {
+                cmd.Parameters.AddWithValue(spParameters[i], spValues[i]);
+            }
+            if (con.State == ConnectionState.Closed)
+                con.Open();
+            dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            dr.Close();
+            con.Close();
+            return dt;
+        }
         public string ExecuteProcedureDML(string[] spParameters,string[] spValues,string ProcedureName)
         {
             cmd = new SqlCommand(ProcedureName, con);

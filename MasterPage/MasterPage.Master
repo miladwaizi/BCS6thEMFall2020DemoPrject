@@ -52,7 +52,7 @@
     <link href="../app-assets/vendors/css/extensions/selectize.bootstrap4.css" rel="stylesheet" />
     
     <link href="../app-assets/css/Custom.css" rel="stylesheet" />
- 
+
     <link href="../app-assets/css/CustomRadioCheckbox.css" rel="stylesheet" />
     <!-- END Custom CSS-->
     <asp:ContentPlaceHolder ID="css" runat="server"></asp:ContentPlaceHolder>
@@ -205,7 +205,7 @@
             <ul class="menu-content">
               <li><a href="../Setting/AcademicYear.aspx" data-i18n="nav.page_layouts.1_column" class="menu-item">Academic Year</a>
               </li>
-              <li><a href="../Pages/OverlapFemale.aspx" data-i18n="nav.page_layouts.2_columns" class="menu-item">Department</a>
+              <li><a href="../Setting/Department.aspx" data-i18n="nav.page_layouts.2_columns" class="menu-item">Department</a>
               </li>
               <li><a href="../Pages/OverlapFemale.aspx" data-i18n="nav.page_layouts.2_columns" class="menu-item">Program Nature</a>
               </li>
